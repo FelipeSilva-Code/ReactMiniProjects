@@ -14,7 +14,17 @@
     font-size : 20px;
     color : white;
     text-align : center;
-}.Image3 {
+}
+@media(max-width: 1000px){
+    .texto3{
+        font-size: 12px;
+    }
+    .Image3{
+        width: 10%;
+        height: 20%;
+    }
+}
+.Image3 {
     display : flex;
     align-items : center;
     height : 50%;

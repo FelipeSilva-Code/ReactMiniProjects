@@ -1,23 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import {Menu}  from './components/menu'
-import ContJavaScript from './components/ContainerJavaScript'
-import ContHTML from './components/ContainerHTML'
-import ContCss from './components/ContainerCss'
-import Container from './components/Container'
-import Footer from './components/Footer'
-
+import React from'react';
+import Front_End from '../src/Pages/Front-End/'
+import Home from '../src/Pages/Home'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ReactDOM from 'react-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
-   <Menu/>
-   <Container/>
-   <ContHTML/>
-   <ContCss/>
-   <ContJavaScript/>
-   <Footer/>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/frontend" component={Front_End} exact/>
+      <Route component={() => (<div>Pagina 404</div>)} /> 
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

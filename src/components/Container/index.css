@@ -33,7 +33,18 @@
     align-items: center;
     justify-content: center;
 }
+
 li{
     font-size: 22px;
     color: aliceblue;
+}
+@media(max-width:1000px) {
+    .trio,
+    .base,
+    li {
+        font-size: 14px;
+    }
+    .trio{
+        margin-top: 30px;
+    }
 }
