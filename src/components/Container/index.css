@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+    height: 85vh;
+    margin-top: 14vh;
+    background-color: rgb(60, 60, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.trio{
+    text-align: center;
+    height: 13%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;  
+    margin-top: -70px;;
+}
+.base{
+    width: 75%;
+    height: 20vh;
+    font-size: 22px;
+    text-align: center;
+    color: aliceblue;
+    margin: 15px;
+}
+.linguagens{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    font-size: 22px;
+    color: aliceblue;
+}

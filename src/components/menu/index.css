@@ -1,0 +1,17 @@
+.topo{
+    display: flex;
+}
+.menu{
+    position: fixed;
+    height: 14vh;
+    width: 100%;
+    background-color: rgb(25, 26, 26);
+    border-bottom: 3pt red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LogoDev{
+      height: 500px;
+      width: 300px;
+}
