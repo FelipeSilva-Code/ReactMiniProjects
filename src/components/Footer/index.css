@@ -8,3 +8,8 @@
     color: white;
     border-top: 2pt blue solid;
 }
+@media(max-width:1000px){
+    .footer{
+        font-size: 10px;
+    }
+}

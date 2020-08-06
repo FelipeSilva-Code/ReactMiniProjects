@@ -39,3 +39,22 @@ a {
     width : 80%;
     height : 90%;
 }
+@media(max-width:600px) {
+    .contTwo {
+        flex-direction: column;
+
+        justify-content: space-evenly;
+    }
+    .texto2 {
+        width: 80%;
+        height: 15%;
+    }
+    .Image2 {
+        width: 56%;
+        height: 40%;
+    }
+    .logo2{
+        margin-left: 20px;
+    }
+
+}

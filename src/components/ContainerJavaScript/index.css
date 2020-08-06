@@ -40,3 +40,19 @@ a{
     height: 100%;
     background-color:yellow;
 }
+@media(max-width:600px) {
+    .contOne {
+        flex-direction: column;
+
+        justify-content: space-evenly;
+    }
+    .texto {
+        width: 80%;
+        height: 15%;
+    }
+    .Image {
+        width: 50%;
+        height: 40%;
+    }
+
+}
