@@ -8,7 +8,7 @@ export default function Container(){
             
             <div className='trio'>
               <h1>  
-                  Você conhece o "trio de ferro" do Front-End?
+                  O "trio de ferro" do Front-End
               </h1>
             </div>
            

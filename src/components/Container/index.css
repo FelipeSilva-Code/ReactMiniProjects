@@ -43,8 +43,15 @@ li{
     .base,
     li {
         font-size: 14px;
+        width: 85%;
+        text-align: center;
     }
     .trio{
-        margin-top: 30px;
+        
+        margin-top: 0px;
+    }
+    .container{
+        margin-top: 11vh;
+        height:70vh;
     }
 }

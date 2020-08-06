@@ -17,7 +17,10 @@
 }
 @media(max-width:1000px){
       .LogoDev{
-          height: 250px;
-          width: 150px;
+          height: 270px;
+          width: 160px;
+      }
+      .menu{
+          height: 12vh;
       }
 }
