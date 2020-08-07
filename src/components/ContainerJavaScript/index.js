@@ -19,7 +19,7 @@ export default function containerOne (){
             </div>
 
             <div className="Image">
-                <img className="logo" src={LogoJS}/>
+                <img className="logo" alt="Logo JS" src={LogoJS}/>
             </div>
             
         </div>

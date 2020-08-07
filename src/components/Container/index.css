@@ -42,16 +42,17 @@ li{
     .trio,
     .base,
     li {
-        font-size: 14px;
+        font-size: 11px;
         width: 85%;
-        text-align: center;
+
     }
     .trio{
         
         margin-top: 0px;
+        text-align: center;
     }
     .container{
         margin-top: 11vh;
-        height:70vh;
+        height:77vh;
     }
 }

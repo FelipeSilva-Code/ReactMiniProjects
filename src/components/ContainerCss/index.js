@@ -24,7 +24,7 @@ export default function containerThree() {
             </div>
 
             <div className="Image3">
-                <img className="logo3" src={LogoCSS} />
+                <img className="logo3" alt="Logo Css" src={LogoCSS} />
             </div>
 
         </div>

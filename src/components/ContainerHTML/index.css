@@ -38,6 +38,7 @@ a {
 }.logo2 {
     width : 80%;
     height : 90%;
+    margin-left: 55px;
 }
 @media(max-width:600px) {
     .contTwo {

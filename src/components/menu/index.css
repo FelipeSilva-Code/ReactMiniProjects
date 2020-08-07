@@ -12,12 +12,12 @@
     justify-content: center;
 }
 .LogoDev{
-      height: 500px;
+      height: 90px;
       width: 300px;
 }
 @media(max-width:1000px){
       .LogoDev{
-          height: 270px;
+          height: 50px;
           width: 160px;
       }
       .menu{

@@ -1,0 +1,30 @@
+.containerHome{
+    height: 86vh;
+    display: flex;
+    background-color: rgb(42, 38, 42);
+    margin-top: 14vh;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.gif{
+    height: 50vh;
+    width: 40vw;
+}
+.tituloHome{
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.txtHome{
+    font-size: 25px;
+}
+.divHome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.linkHome{
+    color: goldenrod;
+}

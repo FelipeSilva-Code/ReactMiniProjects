@@ -21,7 +21,7 @@ export default function containerTwo (){
             </div>
 
             <div className="Image2">
-                <img className="logo2" src={LogoHTML} />
+                <img className="logo2" alt="Logo Html" src={LogoHTML} />
             </div>
 
         </div>
