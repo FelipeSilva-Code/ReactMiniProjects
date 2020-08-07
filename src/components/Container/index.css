@@ -24,7 +24,9 @@
     font-size: 22px;
     text-align: center;
     color: aliceblue;
-    margin: 15px;
+    display: flex;
+    align-items: center;
+
 }
 .linguagens{
     width: 100%;
@@ -42,17 +44,20 @@ li{
     .trio,
     .base,
     li {
-        font-size: 11px;
+        font-size: 13px;
         width: 85%;
 
     }
     .trio{
-        
+
         margin-top: 0px;
         text-align: center;
     }
     .container{
         margin-top: 11vh;
-        height:77vh;
+        height:390px;
+    }
+    .base{
+        height: 150px;
     }
 }

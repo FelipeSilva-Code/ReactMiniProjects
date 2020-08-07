@@ -7,10 +7,6 @@
     flex-direction: column;
     color: white;
 }
-.gif{
-    height: 50vh;
-    width: 40vw;
-}
 .tituloHome{
     width: 80%;
     text-align: center;
@@ -27,4 +23,23 @@
 }
 .linkHome{
     color: goldenrod;
+}
+@media(max-width:1000px){
+    .containerHome{
+        margin-top: 12vh;
+        height: 78vh;
+    }
+    .tituloHome{
+        font-size: 20px;
+    }
+    .txtHome{
+        font-size: 20px;
+        text-align: center;
+    }
+    .ul{
+       width: 100%;
+    }
+    .linkHome{
+        font-size: 17px;
+    }
 }

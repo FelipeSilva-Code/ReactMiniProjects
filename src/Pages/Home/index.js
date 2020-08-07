@@ -20,7 +20,7 @@ function Home (){
             <p className="txtHome">
               Links das maravilhosas paginas feitas por mim:
             </p>
-            <ul>
+            <ul className="ul">
               <li>
                 <Link className="linkHome" to="/frontend">
                   Front-End
