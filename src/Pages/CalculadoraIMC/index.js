@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css'
 import {Menu} from '../../components/menu'
+import Footer from '../../components/Footer'
 export default function Eventos(){
 
     const [texto, setTexto] = useState();
@@ -30,7 +31,7 @@ export default function Eventos(){
         
         <div className="calc">
            
-            <h1>Calculadora de IMC</h1>
+            <h1 className="tituloCalc">Calculadora de IMC</h1>
 
                 <div className="inputs">
                     <label>Nome: &nbsp; </label> 
@@ -57,6 +58,7 @@ export default function Eventos(){
           </div>
        
         </div>
+        <Footer/>
      </>
     )
 }

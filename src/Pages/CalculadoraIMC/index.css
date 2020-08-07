@@ -41,3 +41,12 @@
     border: solid;
     border-color: transparent;
 }
+@media(max-width:800px)
+{
+    .containercentral{
+        margin-top: 12vh;
+    }
+    .calc {
+        width: 370px;
+    }
+}
