@@ -17,7 +17,7 @@ export default function CalculoAcai () {
    const calcTotal = () => {
        let total = (quantidadePequeno * 10) + (quantidadeMedio * 12) + (quantidadeGrande * 15);
 
-       if(formaPagemento == "Dinheiro"){
+       if(formaPagemento === "Dinheiro"){
         let x =(90 * total / 100);
         setResultado("R$" + x) 
       }
@@ -26,11 +26,6 @@ export default function CalculoAcai () {
        toast.success("Confirmado Com Sucesso!!!") //Chamando a função que exibe um alerta
    }
 
-   const limpar = () => {
-     setQuantidadePequeno(0);
-     setQuantidadeMedio(0);
-     setQuantidadeGrande(0);
-   }
 
   return (
     <div>

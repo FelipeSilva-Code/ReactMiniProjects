@@ -2,7 +2,6 @@ import React from 'react';
 import './index.css';
 import {Menu} from "../../components/menu"
 import { Link } from 'react-router-dom';
-import Gif from '../../assets/videos/wolfgif.gif';
 import Footer from '../../components/Footer'
 
 function Home (){

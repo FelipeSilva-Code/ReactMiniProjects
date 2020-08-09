@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css'
-import LogoNotFound from '../../assets/images/NotFound.webp';
 import Gif from '../../assets/videos/wolfgif.gif'
 
 export default function NotFound (){

@@ -11,7 +11,7 @@ export default function Eventos(){
 
     const imcResultado = () => {
         let imc = peso / (altura ** 2);
-        imc = Math.round(imc);
+         imc = imc.toFixed(1);
         if(imc <= 18.5)
            setTexto(`Olá ${nome}, o seu imc é de ${imc}, você está abaixo do peso`);
         else if (imc >= 18.6 && imc <=24.9)
