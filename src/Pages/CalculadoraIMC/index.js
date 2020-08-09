@@ -31,7 +31,7 @@ export default function Eventos(){
         
         <div className="calc">
            
-            <h1 className="tituloCalc">Calculadora de IMC</h1>
+                <h1 className="tituloCalc">Calculadora de IMC</h1>
 
                 <div className="inputs">
                     <label>Nome: &nbsp; </label> 
@@ -55,9 +55,10 @@ export default function Eventos(){
                 
                 <h4>{texto}</h4>
 
-          </div>
+        </div>
        
         </div>
+    
         <Footer/>
      </>
     )
