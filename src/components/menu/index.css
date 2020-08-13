@@ -1,5 +1,7 @@
 .topo{
     display: flex;
+    height: 14vh;
+    width: 100%;
 }
 .menu{
     position: fixed;

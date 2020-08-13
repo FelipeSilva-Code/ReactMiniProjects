@@ -35,6 +35,12 @@ function Home (){
                   Calculadora de IMC
                 </Link>
               </li>
+
+              <li>
+                <Link className="linkHome" to="/correios">
+                  Consulta de CEP
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

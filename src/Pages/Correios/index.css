@@ -1,0 +1,51 @@
+.containerCorreios{
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(114, 107, 98);
+}
+
+.containerCentralCorreios{
+    color: white;
+    display: flex;
+    background-color: rgb(58, 56, 56);
+    height: 75%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 2pt aqua solid;
+}
+.containerCentralCorreios label {
+    display: inline;
+}
+.inputCorreios{
+    color: white;
+    width: 48%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    justify-content: space-between;
+
+}
+.inputCorreiosButton {
+    color: white;
+    width: 48%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+}
+
+.form-control{
+    width: 190px;
+    height: 100%;
+
+}

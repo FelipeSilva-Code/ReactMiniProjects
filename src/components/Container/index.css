@@ -1,8 +1,7 @@
 .container{
     width: 100%;
     height: 85vh;
-    margin-top: 14vh;
-    background-color: rgb(60, 60, 63);
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +55,6 @@ li{
         text-align: center;
     }
     .container{
-        margin-top: 11vh;
         height:390px;
     }
     .base{

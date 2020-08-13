@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+
 import { Menu } from '../../components/menu'
 import ContJavaScript from '../../components/ContainerJavaScript'
 import ContHTML from '../../components/ContainerHTML'

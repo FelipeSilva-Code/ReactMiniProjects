@@ -8,8 +8,8 @@ const api = Axios.create({
 
 export default class CorreiosApi {
     
-    async consultar(){
-        const resp = await api.get('/ws/01001000/json/');
+    async consultar(cep){
+        const resp = await api.get(`/ws/${cep}/json/`);
         console.log(resp.data);
         return resp.data;
     }

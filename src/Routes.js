@@ -6,6 +6,7 @@ import CalculoPrecoAcai from './Pages/CalculoPrecoAcai'
 import CalculadoraIMC from './Pages/CalculadoraIMC'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Correios from './Pages/Correios';
+import CalcularNotaAluno from './Pages/CalcularNotaAluno';
 
 
 export default function Router(){
@@ -16,6 +17,7 @@ export default function Router(){
           <Route path="/frontend" component={Front_End} exact />
           <Route path="/CalculoPrecoAcai" component={CalculoPrecoAcai} exact />
           <Route path="/Calculadora/Imc" component={CalculadoraIMC} exact />
+          <Route path="/CalcularMedia" component={CalcularNotaAluno} exact />
           <Route path="/Correios" component={Correios} exact />
           <Route path="*" component={NotFound} />
         </Switch>
