@@ -53,7 +53,7 @@ export default function Eventos(){
 
                    <button className="calcular" onClick={imcResultado}>Calcular</button>
                 
-                <h4>{texto}</h4>
+                <h4 className="resultadoCalcImc">{texto}</h4>
 
         </div>
        

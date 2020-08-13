@@ -64,7 +64,7 @@ export default function CalculoAcai () {
           <div className="radioCalcAcai">
             <div className="formaPagementoCalcAcai">
               <label>
-                Cartão
+                Cartão  &nbsp;
                 <input
                   onChange={(e) =>
                     setFormaPagamento(e.target.checked ? "Cartão" : "")
@@ -74,7 +74,7 @@ export default function CalculoAcai () {
                 ></input>
               </label>
               <label>
-                Dinheiro
+                Dinheiro &nbsp;
                 <input
                   onChange={(e) =>
                     setFormaPagamento(e.target.checked ? "Dinheiro" : "")
@@ -92,7 +92,7 @@ export default function CalculoAcai () {
             </button>
           </div>
 
-          <h3>O valor final é: &nbsp;{resultado}</h3>
+          <h2>O valor final é: &nbsp;{resultado}</h2>
         </div>
       </div>
 

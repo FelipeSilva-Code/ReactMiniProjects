@@ -52,14 +52,14 @@ cartao{
 }
 @media(max-width:1000px){
 .containerCalcAcai{
-    margin-top: 12vh;
+    margin-top: -2vh;
 }
 .centroCalcAcai{
     width: 300px;
     height: 72vh;
+}
+.centroCalcAcai h2 {
+     font-size: 25px;
+}
 
-}
-.tituloCalc{
-    font-size: 30px;
-}
 }

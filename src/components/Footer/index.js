@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <footer className='footer'>
             <p>
-                Designed by 2020, Felipe
+               <strong>Designed by 2020, Felipe</strong>
             </p>
         </footer>
     )

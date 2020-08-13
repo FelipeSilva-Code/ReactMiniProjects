@@ -29,7 +29,7 @@
 }
 
 .imc{
-    width: 250px;
+    width: 220px;
     height: 50%;
 }
 
@@ -43,9 +43,16 @@
 @media(max-width:1000px)
 {
     .containercentral{
-        margin-top: 12vh;
+        margin-top: -2vh;
     }
     .calc {
-        width: 330px;
+        width: 310px;
+    }
+    .tituloCalc{
+        font-size: 25px;
+    }
+    .resultadoCalcImc{
+        font-size: 15px;
+        text-align: center;
     }
 }

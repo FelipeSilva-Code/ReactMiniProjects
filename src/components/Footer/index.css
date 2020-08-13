@@ -7,9 +7,10 @@
     justify-content: center;
     color: white;
     border-top: 2pt blue solid;
+    font-size: 18px;
 }
 @media(max-width:1000px){
     .footer{
-        font-size: 14px;
+        font-size: 15px;
     }
 }

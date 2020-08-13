@@ -49,3 +49,25 @@
     height: 100%;
 
 }
+@media(max-width: 1000px)
+{
+    .containerCorreios{
+        margin-top: -2vh;
+       width: 100%;
+       height: 90vh;
+    }
+    .containerCentralCorreios{
+        width: 90%;
+        height: 85%;
+    }
+.containerCentralCorreios h1 {
+    font-size: 29px;
+}
+    .inputCorreios{
+        width: 70%;
+        font-size: 15px;
+    }
+    .form-control{
+        width: 120px;
+    }
+}
