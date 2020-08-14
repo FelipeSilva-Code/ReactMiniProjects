@@ -38,7 +38,7 @@ function Home (){
 
               <li>
                 <Link className="linkHome" to="/correios">
-                  Consulta de CEP
+                  Consulta de CEP (Consumindo api do ViaCep)
                 </Link>
               </li>
             </ul>

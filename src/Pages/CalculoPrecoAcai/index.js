@@ -11,20 +11,29 @@ export default function CalculoAcai () {
    const [quantidadePequeno, setQuantidadePequeno] = useState(0);
    const [quantidadeMedio, setQuantidadeMedio] = useState(0);
    const [quantidadeGrande, setQuantidadeGrande] = useState(0);
+   const [valorPequeno, setValorPequeno] = useState(10);
+   const [valorMedio, setValorMedio] = useState(12);
+   const [valorGrande, setValorGrande] = useState(15);
    const [resultado, setResultado] = useState("R$0");
-   const [formaPagemento, setFormaPagamento] = useState()
+   const [formaPagemento, setFormaPagamento] = useState(false);
    
    const calcTotal = () => {
-       let total = (quantidadePequeno * 10) + (quantidadeMedio * 12) + (quantidadeGrande * 15);
+
+       
+       let total = (quantidadePequeno * valorPequeno) + (quantidadeMedio * valorMedio) + (quantidadeGrande * valorGrande);
 
        if(formaPagemento === "Dinheiro"){
         let x =(90 * total / 100);
         setResultado("R$" + x) 
+        toast.success("Confirmado Com Sucesso!!!");
       }
-      else
+       else if(formaPagemento === "Cartão"){
        setResultado("R$" + total);
-       toast.success("Confirmado Com Sucesso!!!") //Chamando a função que exibe um alerta
-   }
+       toast.success("Confirmado Com Sucesso!!!"); //Chamando a função que exibe um alerta
+     }
+     else
+       alert("A forma de pagamento é obrigatória");
+    }
 
 
   return (
@@ -33,32 +42,60 @@ export default function CalculoAcai () {
 
       <div className="containerCalcAcai">
         <div className="centroCalcAcai">
-          <h2>Cálculo total do Açai</h2>
+          <h2>Cálcular preço do açai</h2>
           <div className="qtdPequeno">
-            <label>Quantidade Pequeno: &nbsp;</label>
+           
+            <label htmlFor="qtd">Qtd Pequeno: &nbsp;
             <input
+              id="qtd"
               className="inputsCalcAcai"
               type="number"
               onChange={(e) => setQuantidadePequeno(e.target.value)}
             ></input>
+            </label>
+
+            <label>Valor: &nbsp;
+            <input
+            onChange={(e) => setValorPequeno(e.target.value)}
+            value={valorPequeno}
+            className="valorCalcAcai"
+            type="number"></input>
+            </label>
           </div>
 
           <div className="qtdMedio">
-            <label>Quantidade Médio: &nbsp; &nbsp; &nbsp;</label>
+            <label>Qtd Médio: &nbsp; &nbsp; &nbsp;
             <input
               className="inputsCalcAcai"
               onChange={(e) => setQuantidadeMedio(e.target.value)}
               type="number"
-            ></input>
+              ></input></label>
+
+            <label>Valor:  &nbsp;
+            <input
+              onChange={(e) => setValorMedio(e.target.value)}
+              value={valorMedio}
+              className="valorCalcAcai"
+              type="number"></input>
+            </label>
           </div>
 
           <div className="qtdGrande">
-            <label>Quantidade Grande:&nbsp; &nbsp; &nbsp;</label>
+            <label>Qtd Grande:&nbsp; &nbsp; &nbsp;
             <input
               className="inputsCalcAcai"
               type="number"
               onChange={(e) => setQuantidadeGrande(e.target.value)}
             ></input>
+            </label>
+
+            <label>Valor:  &nbsp;
+            <input
+              value={valorGrande}
+              onChange={(e) => setValorGrande(e.target.value)}
+              className="valorCalcAcai"
+              type="number"></input>
+            </label>
           </div>
 
           <div className="radioCalcAcai">
@@ -67,7 +104,7 @@ export default function CalculoAcai () {
                 Cartão  &nbsp;
                 <input
                   onChange={(e) =>
-                    setFormaPagamento(e.target.checked ? "Cartão" : "")
+                    setFormaPagamento(e.target.checked ? "Cartão" : false)
                   }
                   name="rd"
                   type="radio"
@@ -77,7 +114,7 @@ export default function CalculoAcai () {
                 Dinheiro &nbsp;
                 <input
                   onChange={(e) =>
-                    setFormaPagamento(e.target.checked ? "Dinheiro" : "")
+                    setFormaPagamento(e.target.checked ? "Dinheiro" : false)
                   }
                   name="rd"
                   type="radio"
