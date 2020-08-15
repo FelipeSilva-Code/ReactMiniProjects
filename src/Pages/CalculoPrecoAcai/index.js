@@ -47,7 +47,7 @@ export default function CalculoAcai () {
            
             <label htmlFor="qtd">Qtd Pequeno: &nbsp;
             <input
-              id="qtd"
+              value={quantidadePequeno}
               className="inputsCalcAcai"
               type="number"
               onChange={(e) => setQuantidadePequeno(e.target.value)}
@@ -66,6 +66,7 @@ export default function CalculoAcai () {
           <div className="qtdMedio">
             <label>Qtd Médio: &nbsp; &nbsp; &nbsp;
             <input
+              value={quantidadeMedio}
               className="inputsCalcAcai"
               onChange={(e) => setQuantidadeMedio(e.target.value)}
               type="number"
@@ -83,6 +84,7 @@ export default function CalculoAcai () {
           <div className="qtdGrande">
             <label>Qtd Grande:&nbsp; &nbsp; &nbsp;
             <input
+              value={quantidadeGrande}
               className="inputsCalcAcai"
               type="number"
               onChange={(e) => setQuantidadeGrande(e.target.value)}

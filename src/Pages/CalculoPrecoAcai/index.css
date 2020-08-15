@@ -73,5 +73,12 @@ cartao{
 .centroCalcAcai h2 {
      font-size: 25px;
 }
+.inputsCalcAcai{
+    display: block;
+}
+.valorCalcAcai{
+    display: block;
+}
+
 
 }
