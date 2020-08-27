@@ -71,30 +71,11 @@
 }
 
 @media(max-width: 850px){
-    .contentWeather{
-        flex-direction: column;
-        
-    }
-    .weatherNow{
 
-        position: relative;
-        margin-top: -25px;
-        height: 50%;
-        width: 100%;
-    }
     .containerInputsWeather{
         font-size: 18px;
-        margin-top: 20px;
     }
-    .otherDatas{
-        height: 50%;
-        width: 100%;
-        
-    }
-    .containerWeather{
-     width: 90%;
-     height: 90%;
-    }
+
     .containerTitleWeather h2{
         font-size: 20px;
     }
