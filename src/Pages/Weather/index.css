@@ -1,6 +1,6 @@
 .containerWeather{
     height: 70vh;
-    width: 60%;
+    width: 50%;
     background-color: whitesmoke;
     border: 2pt blue solid;
     display: flex;
@@ -27,7 +27,6 @@
 .otherDatas{
     height: 100%;
     width: 50%;
-    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -44,26 +43,53 @@
 .inputCityWeather{
     display: inline;
     margin-left: 5px;
+
 }
 .containerInputsWeather{
     height: 6vh;
     width: 100%;
-
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .btnWeather{
-    height: 38px;
-    margin-bottom: 5px;
+    height: 35px;
+    margin-bottom: 4px;
 }
 .weatherIcon{
     margin-top: -20px;
     height: 120px;
 }
 
-@media(max-width: 1000px){
+.otherDatas h6{
+    font-size: 1.1rem;
+}
+.otherDatas h4{
+   font-size: 1.5rem;
+}
+
+@media(max-width: 850px){
+    .contentWeather{
+        flex-direction: column;
+        
+    }
+    .weatherNow{
+        background-color: orchid;
+        position: relative;
+        margin-top: -25px;
+        height: 50%;
+        width: 100%;
+    }
+    .containerInputsWeather{
+        font-size: 18px;
+    }
+    .otherDatas{
+        height: 50%;
+        width: 100%;
+        
+    }
     .containerWeather{
      width: 90%;
      height: 90%;
@@ -81,6 +107,6 @@
         font-size: 14px;
     }
     .btnWeather{
-        height: 35px;
+        height: 33px;
     }
 }

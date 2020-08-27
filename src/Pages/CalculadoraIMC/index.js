@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './index.css'
 import {Menu} from '../../components/menu'
 import Footer from '../../components/Footer'
+import ContainerContent from '../../components/ContainerContent'
 export default function Eventos(){
 
     const [texto, setTexto] = useState();

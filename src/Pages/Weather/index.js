@@ -114,11 +114,12 @@ export default function Weather () {
                             <div className="contentWeather">
                               <div className="otherDatas">
                                   <div>
+                                      
                                       <h4>Tempo agora em: {name}</h4>  
                                       <br/>
                                       <h6>Vento: {wind.speed} m/s²</h6>
                                       <br />
-                                      <h6>Humidade: {main.humidity}%</h6>
+                                      <h6>Umidade: {main.humidity}%</h6>
                                       <br />
                                       <h6>Pressão atmosférica: {main.pressure} hPa</h6>
                                       <br />
