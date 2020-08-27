@@ -2,14 +2,16 @@ import React from 'react';
 import './index.css';
 import {Menu} from "../../components/menu"
 import { Link } from 'react-router-dom';
-import Footer from '../../components/Footer'
+import Footer from '../../components/Footer';
+import ContainerContent from '../../components/ContainerContent';
 
 function Home (){
     return (
       <>
         <Menu />
 
-        <div className="containerHome">
+        <ContainerContent>
+
           <h1 className="tituloHome">
             Bem vindo ao WebDeveloper, um lugar onde eu (Felipe Lindo) treino os
             meus conhecimentos sobre o ReactJS
@@ -19,6 +21,7 @@ function Home (){
             <p className="txtHome">
               Links das maravilhosas paginas feitas por mim:
             </p>
+         
             <ul className="ul">
               <li>
                 <Link className="linkHome" to="/frontend">
@@ -37,13 +40,23 @@ function Home (){
               </li>
 
               <li>
-                <Link className="linkHome" to="/correios">
+                <Link className="linkHome" to="/cep">
                   Consulta de CEP (Consumindo api do ViaCep)
                 </Link>
               </li>
+
+              <li>
+                <Link className="linkHome" to="/weather">
+                  Consulta do Clima Atual (Consumindo api do OpenWeather)
+                </Link>
+              </li>
+
+
+              
             </ul>
           </div>
-        </div>
+      
+        </ContainerContent>
         <Footer />
       </>
     );

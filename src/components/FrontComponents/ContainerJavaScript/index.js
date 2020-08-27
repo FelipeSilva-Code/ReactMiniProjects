@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css'
-import LogoJS from '../../assets/images/JavaScript.png';
+import LogoJS from '../../../assets/images/JavaScript.png';
 
 export default function containerOne() {
     return (

@@ -126,7 +126,7 @@ export default function CalculoAcai () {
           </div>
 
           <div>
-            <button className="btnCalcAcai" onClick={calcTotal}>
+            <button className="btn btn-light" onClick={calcTotal}>
               Confirmar
             </button>
           </div>

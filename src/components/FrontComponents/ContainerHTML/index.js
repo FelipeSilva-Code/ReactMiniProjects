@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css'
-import LogoHTML from '../../assets/images/HTML.png'
+import LogoHTML from '../../../assets/images/HTML.png'
 
 
 export default function containerTwo (){

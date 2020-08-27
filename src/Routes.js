@@ -5,8 +5,10 @@ import NotFound from './Pages/NotFound'
 import CalculoPrecoAcai from './Pages/CalculoPrecoAcai'
 import CalculadoraIMC from './Pages/CalculadoraIMC'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Correios from './Pages/Correios';
-import CalcularNotaAluno from './Pages/CalcularNotaAluno';
+import Cep from './Pages/Correios';
+import Weather from './Pages/Weather';
+
+
 
 
 export default function Router(){
@@ -14,11 +16,11 @@ export default function Router(){
       <BrowserRouter>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/frontend" component={Front_End} exact />
+          <Route path="/Frontend" component={Front_End} exact />
           <Route path="/CalculoPrecoAcai" component={CalculoPrecoAcai} exact />
           <Route path="/Calculadora/Imc" component={CalculadoraIMC} exact />
-          <Route path="/CalcularMedia" component={CalcularNotaAluno} exact />
-          <Route path="/Correios" component={Correios} exact />
+          <Route path="/Weather" component={Weather} exact />
+          <Route path="/Cep" component={Cep} exact />
           <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>

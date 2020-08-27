@@ -1,33 +1,25 @@
-.containerHome{
-    height: 86vh;
-    display: flex;
-    background-color: rgb(42, 38, 42);
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
+
 .tituloHome{
     width: 80%;
     text-align: center;
     margin-top: 50px;
+    color: white;
 
 }
 .txtHome{
     font-size: 25px;
+    color: white;
 }
 .divHome{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 50px;
 }
 .linkHome{
     color: goldenrod;
 }
 @media(max-width:1000px){
-    .containerHome{
-        margin-top: -2vh;
-        height: 78vh;
-    }
     .tituloHome{
         font-size: 20px;
     }

@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Menu } from '../../components/menu'
-import ContJavaScript from '../../components/ContainerJavaScript'
-import ContHTML from '../../components/ContainerHTML'
-import ContCss from '../../components/ContainerCss'
-import Container from '../../components/Container'
+import ContJavaScript from '../../components/FrontComponents/ContainerJavaScript'
+import ContHTML from '../../components/FrontComponents/ContainerHTML'
+import ContCss from '../../components/FrontComponents/ContainerCss'
+import Container from '../../components/FrontComponents/Container'
 import Footer from '../../components/Footer'
 
 

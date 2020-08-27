@@ -1,11 +1,11 @@
 import React from 'react'
 import './index.css'
-
+import ContainerContent from '../../ContainerContent';
 
 export default function Container(){
     return(
-        <div className="container">
-            
+        <ContainerContent>
+
             <div className='trio'>
               <h1>  
                   O "trio de ferro" do Front-End
@@ -36,8 +36,10 @@ export default function Container(){
                     </li>
                 </ul>
             </div>
+        </ContainerContent>
+            
            
 
-        </div>
+      
     )
 }

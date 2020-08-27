@@ -1,11 +1,13 @@
 import React from 'react';
 import './index.css'
-import LogoCSS from '../../assets/images/css3.svg'
+
+import LogoCSS from '../../../assets/images/css3.svg'
 
 
 export default function containerThree() {
     return (
         <div className="contThree">
+
             <div className="texto3">
                 <p>
                      O Cascading Style Sheets (CSS) foi proposto pela primeira vez
@@ -26,8 +28,9 @@ export default function containerThree() {
             <div className="Image3">
                 <img className="logo3" alt="Logo Css" src={LogoCSS} />
             </div>
-
         </div>
+
+       
         
     )
 }
