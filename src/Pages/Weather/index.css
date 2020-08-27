@@ -76,6 +76,10 @@
         font-size: 18px;
     }
 
+    .containerWeather{
+        height: 90%;
+        width: 90%;
+    }
     .containerTitleWeather h2{
         font-size: 20px;
     }
