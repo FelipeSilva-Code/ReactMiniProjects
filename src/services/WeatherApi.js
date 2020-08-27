@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL:'http://api.openweathermap.org'
+    baseURL:'https://api.openweathermap.org'
 });
 
 const apiIcon = axios.create({
-    baseURL: "http://openweathermap.org"
+    baseURL: "https://openweathermap.org"
 });
 
 const key = '2d97be0c385c1aee27ee65d9d0b92878';

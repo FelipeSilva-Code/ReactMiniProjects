@@ -4,6 +4,8 @@ import { Menu } from '../../components/menu'
 import Footer from '../../components/Footer'
 import WeatherApi from '../../services/WeatherApi';
 import ContainerContent from '../../components/ContainerContent'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const api = new WeatherApi();
@@ -42,9 +44,6 @@ export default function Weather () {
 
     const [city, setCity] = useState("São Paulo");
 
-    useEffect(() => { 
-        consultClick();
-    }, [])
 
     const [urlIcon, setUrlIcon] = useState("")
 
@@ -56,7 +55,6 @@ export default function Weather () {
     
                 const result = await api.ConsultNow(city);
 
-
                 setName(result.name)
                 
                 setWeather(result.weather);
@@ -67,24 +65,23 @@ export default function Weather () {
 
                 setCoord(result.coord);
 
-                setUrlIcon("http://openweathermap.org/img/wn/" + result.weather[0].icon + "@2x.png");
-
-                
+                setUrlIcon("https://openweathermap.org/img/wn/" + result.weather[0].icon + "@2x.png");
 
                 console.log(result)
-
-               
-                setShow(false);
-                setShow(true)
-       
-       
-       
-    }   catch(e){
-        console.log(e.response)
+    
+      }catch(e){
+        
+        if(e.response.data.message == "city not found")
+        toast.error("Cidade não encontrada");
+        else
+        toast.error("Aconteceu um erro, tente novamente")
+        
         }
-         
-
     }
+
+    useEffect(() => {
+        consultClick();
+    }, [])
 
     
 
@@ -148,6 +145,7 @@ export default function Weather () {
               </ContainerContent>
 
             <Footer/>
+         <ToastContainer/>
         </div>
     )
 }
