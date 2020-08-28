@@ -113,30 +113,31 @@ export default function Weather () {
 
                             <div className="contentWeather">
                               <div className="otherDatas">
-                                  <div>
                                       
-                                      <h4>Tempo agora em: {name}</h4>  
-                                      <br/>
+                                      
+                                  
                                       <h6>Vento: {wind.speed} m/s²</h6>
-                                      <br />
+                                   
                                       <h6>Umidade: {main.humidity}%</h6>
-                                      <br />
+                             
                                       <h6>Pressão atmosférica: {main.pressure} hPa</h6>
-                                      <br />
-                                      <h6>Latitulde: {coord.lat} </h6>
-                                      <br />
-                                      <h6>Longitulde: {coord.lon}</h6>
-                                  </div>
+                            
+                                      <h6>Latitude: {coord.lat} </h6>
+                           
+                                      <h6>Longitude: {coord.lon}</h6>
+                
                               </div>
 
                                 <div className="weatherNow">
-                                    <h2>{main.temp}º</h2>
+                                    <h2>{main.temp}ºC</h2>
 
-                                    <h4>Sensação de {main.feels_like}º</h4>
+                                    <h4>Sensação de {main.feels_like}ºC</h4>
 
                                     <h4>{weather[0].description}</h4>
 
                                    <img className="weatherIcon" src={urlIcon}></img>
+
+                                   <p>Tempo agora em: {name}</p>  
                                 </div>
 
                             </div>
