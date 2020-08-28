@@ -92,13 +92,12 @@
         margin-top: 5%;
     }
     .otherDatas{
-        margin-top: 7%;
+        margin-top: 8%;
     }
 
     .containerWeather{
-        height: 90%;
+        height: 98%;
         width: 90%;
-        margin-top: -10px;
         border-radius: 5px;
        
     }
