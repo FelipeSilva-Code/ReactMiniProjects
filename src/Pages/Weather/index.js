@@ -12,9 +12,10 @@ const api = new WeatherApi();
 
 export default function Weather () {
 
-    const [show, setShow] = useState(false)
 
     const [name, setName] = useState("");
+
+    const [country, setCountry] = useState("")
 
     const [coord, setCoord] = useState({
         "lon":0,
@@ -65,13 +66,15 @@ export default function Weather () {
 
                 setCoord(result.coord);
 
+                setCountry(result.sys.country);
+
                 setUrlIcon("https://openweathermap.org/img/wn/" + result.weather[0].icon + "@2x.png");
 
                 console.log(result)
     
       }catch(e){
         
-        if(e.response.data.message == "city not found")
+        if(e.response.data.message === "city not found")
         toast.error("Cidade não encontrada");
         else
         toast.error("Aconteceu um erro, tente novamente")
@@ -137,7 +140,7 @@ export default function Weather () {
 
                                    <img className="weatherIcon" src={urlIcon}></img>
 
-                                   <p>Tempo agora em: {name}</p>  
+                                   <p>Tempo agora em: {name}, {country}</p>  
                                 </div>
 
                             </div>

@@ -87,12 +87,20 @@
     .containerInputsWeather{
         font-size: 15px;
     }
+    .weatherNow{
+        height: 60%;
+        margin-top: 5%;
+    }
+    .otherDatas{
+        margin-top: 7%;
+    }
 
     .containerWeather{
-        height: 80%;
+        height: 90%;
         width: 90%;
         margin-top: -10px;
         border-radius: 5px;
+       
     }
     .containerTitleWeather h2{
         font-size: 21px;
@@ -106,9 +114,6 @@
     .otherDatas h6{
         font-size: 14px;
     }
-    .weatherNow{
-        height: 67%;
-    }
     .weatherNow h4{
         font-size: 14px;
     }
@@ -121,5 +126,6 @@
     .inputCityWeather{
         width: 170px;
         height: 33px;
+
     }
 }
