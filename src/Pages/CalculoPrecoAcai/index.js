@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {Menu} from '../../components/menu';
 import Footer from '../../components/Footer';
+import ContainerContent from '../../components/ContainerContent'
 import "./index.css"
 
 export default function CalculoAcai () {
@@ -40,9 +41,10 @@ export default function CalculoAcai () {
     <div>
       <Menu />
 
-      <div className="containerCalcAcai">
+      <ContainerContent>
+
         <div className="centroCalcAcai">
-          <h2>Cálcular preço do açai</h2>
+          <h2>Calcular preço do açai</h2>
           <div className="qtdPequeno">
            
             <label htmlFor="qtd">Qtd Pequeno: &nbsp;
@@ -102,6 +104,7 @@ export default function CalculoAcai () {
 
           <div className="radioCalcAcai">
             <div className="formaPagementoCalcAcai">
+               
               <label>
                 Cartão  &nbsp;
                 <input
@@ -112,6 +115,7 @@ export default function CalculoAcai () {
                   type="radio"
                 ></input>
               </label>
+         
               <label>
                 Dinheiro &nbsp;
                 <input
@@ -133,7 +137,8 @@ export default function CalculoAcai () {
 
           <h2>O valor final é: &nbsp;{resultado}</h2>
         </div>
-      </div>
+     
+      </ContainerContent>
 
       <Footer />
       <ToastContainer />

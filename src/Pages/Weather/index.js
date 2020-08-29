@@ -70,7 +70,7 @@ export default function Weather () {
 
                 setUrlIcon("https://openweathermap.org/img/wn/" + result.weather[0].icon + "@2x.png");
 
-                console.log(result)
+                console.log(result);
     
       }catch(e){
         
@@ -122,16 +122,16 @@ export default function Weather () {
                                       <h6>Vento: {wind.speed} m/s²</h6>
                                    
                                       <h6>Umidade: {main.humidity}%</h6>
-                             
-                                      <h6>Pressão atmosférica: {main.pressure} hPa</h6>
                             
                                       <h6>Latitude: {coord.lat} </h6>
                            
                                       <h6>Longitude: {coord.lon}</h6>
+
+                                      <h6>Pressão: {main.pressure} hPa</h6>
                 
                               </div>
 
-                                <div className="weatherNow">
+                                <div  className="weatherNow">
                                     <h2>{main.temp}ºC</h2>
 
                                     <h4>Sensação de {main.feels_like}ºC</h4>

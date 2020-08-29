@@ -3,6 +3,7 @@ import CorreiosApi from '../../services/CorreiosApi';
 import './index.css'
 import {Menu} from '../../components/menu'
 import Footer from '../../components/Footer'
+import ContainerContent from '../../components/ContainerContent'
 const api = new CorreiosApi();
 
 
@@ -16,6 +17,13 @@ export default function Correios () {
     const [complemento, setComplemento] = useState("");
     const [bairro, setBairro] = useState("");
     const [localidade, setLocalidade] = useState("");
+
+      const apagaDados = () => {
+        setLogradouro("");
+        setComplemento("");
+        setBairro("");
+        setLocalidade("");
+      }
  
        const consultarClick = async () => {
        const resp = await api.consultar(cep);
@@ -23,13 +31,11 @@ export default function Correios () {
        setComplemento(resp.complemento);
        setBairro(resp.bairro);
        setLocalidade(resp.localidade);
+       console.log(resp);
 
        
        if(resp.erro === true){
-         setLogradouro("");
-         setComplemento("");
-         setBairro("");
-         setLocalidade("");
+         apagaDados();
          alert("CEP não encontrado")
        }
 
@@ -42,7 +48,7 @@ export default function Correios () {
       
       <Menu/>
      
-      <div className="containerCorreios">
+      <ContainerContent>
 
       <div className="containerCentralCorreios">
 
@@ -53,19 +59,19 @@ export default function Correios () {
         </div>
         
           <div className="inputCorreios">
-            <label>Logradouro:</label><input className="form-control" type="text" readonly value={logradouro}/>
+            <label>Logradouro:</label><input className="form-control" type="text" readOnly value={logradouro}/>
         </div>
 
           <div className="inputCorreios">
-            <label>Complemento:</label><input className="form-control" type="text" readonly value={complemento} />
+            <label>Complemento:</label><input className="form-control" type="text" readOnly value={complemento} />
         </div>
 
           <div className="inputCorreios">
-            <label>Bairro:</label><input className="form-control" type="text" readonly value={bairro} />
+            <label>Bairro:</label><input className="form-control" type="text" readOnly value={bairro} />
         </div>
 
           <div className="inputCorreios">
-            <label>Localidade:</label><input className="form-control" type="text" readonly value={localidade} />
+            <label>Localidade:</label><input className="form-control" type="text" readOnly value={localidade} />
         </div>
 
           <div className="inputCorreiosButton">
@@ -76,7 +82,9 @@ export default function Correios () {
     
       </div>
 
-      </div>
+
+      </ContainerContent>
+
 
       <Footer/>
       </>

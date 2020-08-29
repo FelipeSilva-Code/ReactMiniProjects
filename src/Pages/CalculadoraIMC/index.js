@@ -28,27 +28,27 @@ export default function Eventos(){
      <>
        <Menu/>
       
-       <div className="containercentral">
-        
+       <ContainerContent>
+
         <div className="calc">
            
                 <h1 className="tituloCalc">Calculadora de IMC</h1>
 
                 <div className="inputs">
                     <label>Nome: &nbsp; </label> 
-                    <input className="imc" type="text" onChange={(e) => setNome(e.target.value)}></input>
+                        <input className="imc form-control" type="text" onChange={(e) => setNome(e.target.value)}></input>
                     <br/>
                 </div>
 
                 <div className="inputs">
                     <label>Altura: &nbsp;</label>
-                    <input className="imc" type="number" onChange={(e) => setAltura(e.target.value)}></input>
+                        <input className="imc form-control" type="number" onChange={(e) => setAltura(e.target.value)}></input>
                     <br/>
                 </div>
 
                 <div className="inputs">    
-                    <label>Peso:&nbsp; &nbsp;</label>
-                    <input className="imc" type="number" onChange={(e) =>setPeso(e.target.value)}></input>
+                        <label>Peso:&nbsp; &nbsp; &nbsp;</label>
+                        <input className="imc form-control" type="number" onChange={(e) =>setPeso(e.target.value)}></input>
                     <br/>
                 </div>    
 
@@ -58,7 +58,9 @@ export default function Eventos(){
 
         </div>
        
-        </div>
+   
+       </ContainerContent>
+        
     
         <Footer/>
      </>

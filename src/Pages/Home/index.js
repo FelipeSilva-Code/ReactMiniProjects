@@ -23,23 +23,7 @@ function Home (){
             </p>
          
             <ul className="ul">
-              <li>
-                <Link className="linkHome" to="/frontend">
-                  Front-End
-                </Link>
-              </li>
-              <li>
-                <Link className="linkHome" to="/CalculoPrecoAcai">
-                  Calcular Preço do Açai
-                </Link>
-              </li>
-              <li>
-                <Link className="linkHome" to="/calculadora/imc">
-                  Calculadora de IMC
-                </Link>
-              </li>
-
-              <li>
+               <li>
                 <Link className="linkHome" to="/cep">
                   Consulta de CEP (Consumindo api do ViaCep)
                 </Link>
@@ -50,6 +34,28 @@ function Home (){
                   Consulta do Clima Atual (Consumindo api do OpenWeather)
                 </Link>
               </li>
+
+              <li>
+                <Link className="linkHome" to="/calculadora/imc">
+                  Calculadora de IMC
+                </Link>
+              </li>
+
+              <li>
+                <Link className="linkHome" to="/CalculoPrecoAcai">
+                  Calcular Preço do Açai
+                </Link>
+              </li>
+
+              <li>
+                <Link className="linkHome" to="/frontend">
+                  Front-End
+                </Link>
+              </li>
+             
+             
+
+             
 
 
               

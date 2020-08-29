@@ -1,29 +1,21 @@
-.containerCorreios{
-    height: 86vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(114, 107, 98);
-}
-
 .containerCentralCorreios{
     color: white;
     display: flex;
-    background-color: rgb(58, 56, 56);
+    background-color: rgb(218, 207, 53);
     height: 80%;
     width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
-    border: 2pt aqua solid;
+    border: 3pt rgb(1, 19, 19) solid;
+    color: rgb(0, 0, 0);
+
 }
 .containerCentralCorreios label {
     display: inline;
 }
 .inputCorreios{
-    color: white;
     width: 48%;
     height: 30px;
     display: flex;
@@ -69,5 +61,6 @@
     }
     .form-control{
         width: 120px;
+        margin-left: 5px;
     }
 }
