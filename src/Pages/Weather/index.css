@@ -10,6 +10,7 @@
     font-size: 60%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font: bolder;
+    font-size: 60%;
 }
 
 .contentWeather{
@@ -30,7 +31,7 @@
 }
 
 .weatherNow p {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: -15px;
 }
 
@@ -54,6 +55,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-size: 2rem;
 }
 .inputCityWeather{
     display: inline;
@@ -70,8 +72,8 @@
 
 }
 .btnWeather{
-    height: 35px;
-    margin-bottom: 4px;
+    height: 33px;
+
 }
 .weatherIcon{
     margin-top: -20px;
@@ -117,13 +119,16 @@
         font-size: 14px;
     }
     .weatherNow h4{
-        font-size: 14px;
+        font-size: 15px;
+    }
+    .weatherNow p{
+        font-size: 17px;
     }
     .btnWeather{
-        height: 33px;
+        height: 32px;
         width: 70px;
         font-size: 13px;
-        margin-top: -3px;
+        margin-bottom: 4px;
     }
     .inputCityWeather{
         width: 170px;

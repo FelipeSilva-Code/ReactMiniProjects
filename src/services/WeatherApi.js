@@ -21,6 +21,11 @@ export default class WeatherApi {
 Promise.WeatherApi.then(result => console.log(result.data)).catch(err => console.log(err.response.data));*/
     }
 
+    async ConsultForecast ( ) {
+        const resp = await api.get("/data/2.5/forecast?q=Osasco&units=metric&appid=2d97be0c385c1aee27ee65d9d0b92878&lang=pt_br")
+        return resp.data;
+    }
+
     async getIcon () {
         const urlFoto = apiIcon.defaults.baseURL + '/img/wn/01d@2x.png';
         console.log(urlFoto);
