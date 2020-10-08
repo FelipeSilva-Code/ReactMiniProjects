@@ -55,31 +55,35 @@ export default function Correios () {
             <h1>Consulta de CEP</h1>
           </div>
 
+        <div className="divInputsCep">
+
           <div className="inputCorreios">
             <label>Cep:</label><input className="form-control inputCep" type="text" onChange={(e) => setCep(e.target.value)} value={cep}></input>
-         </div>
+          </div>
         
           <div className="inputCorreios">
             <label>Logradouro:</label><input className="form-control inputCep" type="text" readOnly value={logradouro}/>
-        </div>
+          </div>
 
           <div className="inputCorreios">
             <label>Complemento:</label><input className="form-control inputCep" type="text" readOnly value={complemento} />
-        </div>
+          </div>
 
           <div className="inputCorreios">
             <label>Bairro:</label><input className="form-control inputCep" type="text" readOnly value={bairro} />
-        </div>
+          </div>
 
           <div className="inputCorreios">
             <label>Localidade:</label><input className="form-control inputCep" type="text" readOnly value={localidade} />
-        </div>
+          </div>
+
+        </div> 
 
           <div className="inputCorreiosButton">
             <button className="btn btn-warning" onClick={consultarClick}>Consultar</button>
         </div>
         
-      
+    
     
       </div>
 
