@@ -2,10 +2,9 @@
     height: 70vh;
     width: 60%;
     background-color: whitesmoke;
-    border: 2pt aqua solid;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
     flex-direction: column;
     font-size: 60%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,11 +14,10 @@
 
 .contentWeather{
     display: flex;
-    height: 80%;
+    height: 70%;
     width: 100%;
     flex-direction: column;
-    background-color: aqua;
-    border-radius: 10px ;
+    background-color: rgb(26, 196, 196);
 }
 .weatherNow{
     height: 77%;
@@ -50,12 +48,13 @@
 }
 .containerTitleWeather{
     width: 100%;
-    height: 25%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     font-size: 2rem;
+    background-color:rgb(177, 171, 171);
 }
 .inputCityWeather{
     display: inline;
@@ -69,10 +68,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-top: -10px;
 }
 .btnWeather{
-    height: 33px;
+    height: 38px;
+    margin-left: 5px;
+    margin-top: -2px;
 
 }
 .weatherIcon{
@@ -101,10 +102,16 @@
     }
 
     .containerWeather{
-        height: 98%;
+        height: 90%;
         width: 90%;
         border-radius: 5px;
        
+    }
+    .containerTitleWeather{
+        height: 20%;
+    }
+    .contentWeather{
+        height: 80%;
     }
     .containerTitleWeather h2{
         font-size: 21px;
@@ -128,7 +135,7 @@
         height: 32px;
         width: 70px;
         font-size: 13px;
-        margin-bottom: 4px;
+        margin-left: -2px;
     }
     .inputCityWeather{
         width: 170px;

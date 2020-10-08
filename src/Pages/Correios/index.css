@@ -1,29 +1,29 @@
 .containerCentralCorreios{
     color: white;
     display: flex;
-    background-color: rgb(218, 207, 53);
-    height: 80%;
+    background-color: rgb(53, 119, 218);
+    height: 90%;
     width: 50%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 10px;
-    border: 3pt rgb(1, 19, 19) solid;
     color: rgb(0, 0, 0);
+}
 
-}
-.containerCentralCorreios label {
-    display: inline;
-}
+
 .inputCorreios{
     width: 48%;
-    height: 30px;
+    height: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 18px;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-top: -25px;
+}
 
+.inputCep{
+    height: 30px;
+    margin-top: -7px;
 }
 .inputCorreiosButton {
     color: white;
@@ -36,11 +36,6 @@
 
 }
 
-.form-control{
-    width: 190px;
-    height: 100%;
-
-}
 @media(max-width: 1000px)
 {
     .containerCorreios{
@@ -59,8 +54,7 @@
         width: 70%;
         font-size: 15px;
     }
-    .form-control{
-        width: 120px;
-        margin-left: 5px;
+    .inputCep{
+        width: 95%;
     }
 }

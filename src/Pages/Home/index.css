@@ -3,21 +3,26 @@
     width: 80%;
     text-align: center;
     margin-top: 50px;
-    color: white;
+    color: black;
 
 }
 .txtHome{
     font-size: 25px;
-    color: white;
+    color: black;
 }
 .divHome{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 50px;
+    color: black;
 }
 .linkHome{
     color: goldenrod;
+}
+
+li {
+    color: black;
 }
 @media(max-width:1000px){
     .tituloHome{

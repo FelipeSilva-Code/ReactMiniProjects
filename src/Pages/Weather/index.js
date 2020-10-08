@@ -140,6 +140,8 @@ export default function Weather () {
                 <h6>Pressão: {main.pressure} hPa</h6>
               </div>
 
+              
+
               <div className="weatherNow">
                 <h2>{main.temp}ºC</h2>
 

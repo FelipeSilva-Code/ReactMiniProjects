@@ -7,6 +7,7 @@ import CalculadoraIMC from './Pages/CalculadoraIMC'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Cep from './Pages/Correios';
 import Weather from './Pages/Weather';
+import Testes from './Pages/Testes'
 
 
 
@@ -21,6 +22,7 @@ export default function Router(){
           <Route path="/Calculadora/Imc" component={CalculadoraIMC} exact />
           <Route path="/Weather" component={Weather} exact />
           <Route path="/Cep" component={Cep} exact />
+          <Route path="/testes" component={Testes} exact />
           <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>
