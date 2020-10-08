@@ -51,9 +51,9 @@ export default function Correios () {
       <ContainerContent>
 
       <div className="containerCentralCorreios">
-          <div>  
+      
             <h1>Consulta de CEP</h1>
-          </div>
+   
 
         <div className="divInputsCep">
 
@@ -79,9 +79,9 @@ export default function Correios () {
 
         </div> 
 
-          <div className="inputCorreiosButton">
+       
             <button className="btn btn-warning" onClick={consultarClick}>Consultar</button>
-        </div>
+      
         
     
     
