@@ -13,7 +13,7 @@ function Home (){
         <ContainerContent>
           <h2 className="tituloHome">
             Bem vindo ao WebDeveloper, um lugar onde eu (Felipe Conceição) faço
-            projetos usando a técnologia React.JS. 
+            projetos usando a tecnologia React.JS. 
             <br />
             Esse site é voltado para projetos que não envolvem o uso de
             Back-End.
