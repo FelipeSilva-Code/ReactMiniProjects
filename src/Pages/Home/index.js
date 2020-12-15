@@ -11,27 +11,29 @@ function Home (){
         <Menu />
 
         <ContainerContent>
-
-          <h1 className="tituloHome">
-            Bem vindo ao WebDeveloper, um lugar onde eu (Felipe Lindo) treino os
-            meus conhecimentos sobre o ReactJS
-          </h1>
+          <h2 className="tituloHome">
+            Bem vindo ao WebDeveloper, um lugar onde eu (Felipe Conceição) faço
+            projetos usando a técnologia React.JS. 
+            <br />
+            Esse site é voltado para projetos que não envolvem o uso de
+            Back-End.
+          </h2>
 
           <div className="divHome">
             <p className="txtHome">
-              Links das maravilhosas paginas feitas por mim:
+              Links de alguns dos projetos feitos por mim:
             </p>
-         
+
+            <li>
+              <Link className="linkHome" to="/weather">
+                Consulta do Clima Atual (Consumindo api do OpenWeather)
+              </Link>
+            </li>
+
             <ul className="ul">
-               <li>
+              <li>
                 <Link className="linkHome" to="/cep">
                   Consulta de CEP (Consumindo api do ViaCep)
-                </Link>
-              </li>
-
-              <li>
-                <Link className="linkHome" to="/weather">
-                  Consulta do Clima Atual (Consumindo api do OpenWeather)
                 </Link>
               </li>
 
@@ -52,16 +54,8 @@ function Home (){
                   Front-End
                 </Link>
               </li>
-             
-             
-
-             
-
-
-              
             </ul>
           </div>
-      
         </ContainerContent>
         <Footer />
       </>
